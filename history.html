@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Inter&family=Poppins:wght@700;700&family=Roboto:wght@500;700&display=swap');
+
+*
+{
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+}
+        .h1 {
+            height: 60px;
+            right: 0px;
+            left: 0px;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 13px -3px rgba(128, 128, 128, 0.304);
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
+            z-index: 30;
+            background-color: #ffffff;
+            
+        }
+
+        .bdy {
+            z-index: 1;
+            height: 600px;
+            position: absolute;
+            top:65px;
+            left: 0px;
+            right: 0px;
+        }
+        .lftmrgn
+        {
+            background-color: rgba(240, 240, 240, 0.646);
+            width:250px;
+            display:flex;
+            align-items: left;
+            flex-direction: column;
+            height:100vh;
+            z-index: 2;
+            position:fixed;
+           
+        }
+        .lftmrgn ul li
+        {
+         margin-bottom: 30px;
+         list-style-type: none;
+         margin-left: -10px;
+         font-weight: 300;
+        
+        }
+        .cntnt
+        {
+            position:relative;;
+            top:5px;
+            display:block;
+            width:820px;
+            left:270px;
+            font-weight: 500;
+            z-index: 1;
+        }
+        #logo
+        {
+            height:300px;
+            width:300px;
+            position:relative;
+            top:-100px;
+            left:42%;
+            
+        }
+        #subsc
+        {
+            background-color: rgb(216, 216, 216);
+            padding:10px;
+            position:relative;
+            left:-30px;
+            width:230px;
+            top:-10px;
+            display: flex;
+            font-weight: 600;
+            font-size: 20px;
+            justify-content: center;
+            background-color: #2c7da0;
+            color:rgb(252, 231, 42);
+        }
+        #boom
+        {
+            animation: boom 1.5s ease-out infinite;
+            font-size: 30px;
+            position:relative;
+            top:-5px;
+            
+        }
+        @keyframes boom {
+            0%{
+                transform:rotate(0deg);
+            }
+            100%
+            {
+                transform: rotate(360deg);
+            }
+         
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        #frstpic
+        {
+            width:800px;
+            float:top;
+            height:600px;
+        }
+        .lftmrgn a:hover
+        {
+            color:rgb(108, 108, 108);
+        }
+        #scndlst
+        {
+            color:#2d2d2d;
+            
+        }
+        .hdng1
+        {
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .sec2 img 
+        {
+            margin-top: 25px;
+            width:800px;
+        }
+        @media screen and (max-width:480px) {
+            .lftmrgn
+        {
+            background-color: rgba(240, 240, 240, 0.646);
+            width:150px;
+            display:flex;
+            align-items: left;
+            flex-direction: column;
+            height:100vh;
+            z-index: 2;
+            position:fixed;
+            backface-visibility: hidden;
+            background: transparent;
+           
+        }
+        .lftmrgn ul li
+        {
+         margin-bottom: 30px;
+         list-style-type: none;
+         margin-left: -10px;
+         font-weight: 300;
+         color:transparent;
+        
+        }
+        #subsc
+        {
+            background-color: rgb(216, 216, 216);
+            padding:10px;
+            position:relative;
+            left:-30px;
+            width:130px;
+            top:-10px;
+            display: flex;
+            font-weight: 600;
+            font-size: 15px;
+            justify-content: center;
+            background-color: #2c7da0;
+            color:rgb(252, 231, 42);
+            color:transparent;
+            background: transparent;
+        }
+        .h1 {
+            height: 60px;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 13px -3px rgba(128, 128, 128, 0.304);
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
+            z-index: 30;
+            background-color: #ffffff;
+            width:100vw;
+            
+        }
+        .cntnt
+        {
+            position:relative;;
+            top:5px;
+            display:block;
+            width:360px;
+            left:20px;
+            font-weight: 500;
+            z-index: 1;
+        }
+        .sec2 img 
+        {
+            margin-top: 25px;
+            width:300px;
+        }
+        #frstpic
+        {
+            width:370px;
+            float:bottom;
+            
+        }
+        #logo
+        {
+            height:300px;
+            width:300px;
+            position:relative;
+            top:-103px;
+            left:13%;
+            
+        }
+        button{
+            position: absolute;
+            top:16px;
+            right:25px;
+            text-decoration: none;
+            color:rgb(252, 231, 42);
+            background-color:#2c7da0;
+            padding: 5px;
+            border-radius: 8px;
+            font-weight:600;
+            width:65px;
+            transition: color 0.3s ease;
+            font-size: 13px;
+            border:0px;
+        }
+        }
+
+        @media screen and (max-width:368px) {
+            
+        .h1 {
+            height: 60px;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 13px -3px rgba(128, 128, 128, 0.304);
+            position:fixed;
+            left:0;
+            right:0;
+            top:0;
+            z-index: 30;
+            background-color: #ffffff;
+            width:100vw;
+            
+        }
+        .cntnt
+        {
+            position:relative;;
+            top:5px;
+            display:block;
+            width:330px;
+            left:20px;
+            font-weight: 500;
+            z-index: 1;
+        }
+        .sec2 img 
+        {
+            margin-top: 25px;
+            width:300px;
+        }
+        #frstpic
+        {
+            width:330px;
+            float:bottom;
+            
+        }
+        #logo
+        {
+            height:300px;
+            width:300px;
+            position:relative;
+            top:-103px;
+            left:11%;
+            
+        }
+        button{
+            position: absolute;
+            top:16px;
+            right:15px;
+            text-decoration: none;
+            color:rgb(252, 231, 42);
+            background-color:#2c7da0;
+            padding: 5px;
+            border-radius: 8px;
+            font-weight:600;
+            width:60px;
+            transition: color 0.3s ease;
+            font-size: 12px;
+            border:0px;
+        }
+        
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h1"><img src="LearNexus-removebg-preview.png" alt="logo" id="logo"> </div>
+   
+    <div class="bdy">
+        <div class="lftmrgn">
+            <ul>
+               <a href="#"><li id="subsc"> Susbcribe Now <span id="boom">💥</span> </li> </a>
+               <a href="#"><li >Ancient History</li></a>
+               <a href="#"><li >Medieval History</li></a>
+               <a href="#"><li >Modern History</li></a>
+            </ul>
+        </div>
+
+      <div class="cntnt"> History is the study of past events, particularly human affairs. It encompasses a wide range of subjects, including political, social, economic, cultural, military, and intellectual developments. Historians use various methods to analyze and interpret historical events, including archival research, textual analysis, archaeological excavation, and oral history.
+        <br><br>
+
+
+    <img src="https://www.euroschoolindia.com/wp-content/uploads/2023/07/importance-of-history-scaled-1.jpg" alt="" id="frstpic">
+    <br>
+    <br>
+
+
+<span style="text-align: center; display:flex; align-items: center; justify-content: center; font-size: 30px;font-weight: 500; color:#2c7da0">Importance of History</span><br>
+History is important for several reasons:
+<ul>
+    <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Understanding the Present:</span></a> History provides essential context for understanding current events, trends, and issues. By studying the past, we can gain insights into the origins of contemporary societies, cultures, political systems, and conflicts. Understanding historical precedents helps us make informed decisions and navigate complex social, political, and economic landscapes.</li></a>
+
+    <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Learning from Mistakes and Successes:</span></a>History offers valuable lessons from the successes and failures of past civilizations, societies, and individuals. By examining historical events and their outcomes, we can learn from past mistakes and successes, avoid repeating negative patterns, and adopt strategies that promote progress, peace, and prosperity.</li></a>
+
+    <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Cultural Identity and Heritage:</span></a> History plays a crucial role in shaping cultural identity and heritage. It helps individuals and communities understand their roots, traditions, and shared experiences, fostering a sense of belonging and pride. By preserving and studying historical artifacts, monuments, literature, and traditions, we can celebrate diverse cultures and appreciate the richness of human heritage.</li></a>
+
+    <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Promoting Empathy and Tolerance:</span></a> Studying history encourages empathy and tolerance by exposing us to different perspectives, experiences, and worldviews. It allows us to walk in the shoes of people from diverse backgrounds and understand the complexities of human motivations and actions. By recognizing the commonalities and differences among societies throughout history, we can cultivate mutual respect and understanding.</li></a>
+
+    <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Inspiration and Motivation:</span></a> History is full of stories of courage, resilience, innovation, and progress. By learning about the achievements and contributions of past individuals and civilizations, we can find inspiration and motivation to overcome challenges, pursue our goals, and make positive changes in the world.</li></a>
+
+    <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Critical Thinking and Analytical Skills:</span></a> Studying history cultivates critical thinking, analytical skills, and the ability to evaluate evidence and arguments. Historians must analyze primary and secondary sources, interpret conflicting accounts, and construct coherent narratives based on available evidence. These skills are valuable in various fields, including academia, law, journalism, policymaking, and business.</li></a>
+
+    <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Preserving Memory and Identity: </span></a>  History serves as a collective memory, preserving the stories, achievements, struggles, and sacrifices of past generations. By remembering and honoring the past, we can ensure that important lessons are not forgotten and that the legacies of those who came before us continue to inspire future generations.
+
+    </li></a>
+</ul>
+<br><br>
+<span style="text-align: center; display:flex; align-items: center; justify-content: center; font-size: 30px;font-weight: 500; color:#2c7da0">Division of Human History:</span><br>
+The term "era" in history refers to a significant period of time characterized by particular social, political, cultural, or technological developments. Eras provide frameworks for organizing and understanding historical events within broader chronological contexts. Historians use various criteria, such as major political changes, cultural shifts, technological advancements, or economic transformations, to delineate different eras in human history. Here are some examples of significant eras in history: 
+<ul >
+    <li id="scndlst">Ancient Era</li>
+    <li id="scndlst">Medieval Era</li>
+    <li id="scndlst">Renaissance</li>
+    <li id="scndlst">Early Modern Era</li>
+    <li id="scndlst">Industrial Revolution</li>
+    <li id="scndlst">Modern Era</li>
+</ul> 
+ 
+<br>
+    <!-- section 2-->
+        <ul>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Ancient Era:</span></a>The ancient era encompasses the earliest known civilizations, such as Mesopotamia, Ancient Egypt, Ancient Greece, and Ancient Rome. It spans from the development of writing (around 3500 BCE) to the fall of the Western Roman Empire (476 CE) or the fall of the Eastern Roman Empire (1453 CE), depending on the historical perspective.
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Medieval Era:</span></a>The medieval era, also known as the Middle Ages, spans from the fall of the Western Roman Empire (476 CE) to the beginning of the Renaissance (around the 14th century). It is characterized by feudalism, the rise of Christianity, the spread of Islam, the development of medieval European kingdoms, and significant cultural and intellectual achievements in fields such as art, architecture, and philosophy.</li></a>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Renaissance:</span></a>The Renaissance, meaning "rebirth," was a period of cultural, artistic, and intellectual revival in Europe that began in Italy in the 14th century and spread across the continent during the 15th and 16th centuries. It marked the transition from the medieval to the modern era, with significant advancements in art, literature, science, and exploration.</li></a>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Early Modern Era:</span></a> The early modern era encompasses the period from the late 15th century to the late 18th century. It includes the Age of Exploration, the Protestant Reformation, the Scientific Revolution, the Enlightenment, and the rise of absolute monarchies and nation-states in Europe.</li></a>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Industrial Revolution:</span></a>The Industrial Revolution, which began in Britain in the late 18th century and spread to other parts of the world during the 19th century, marked a significant shift from agrarian economies to industrialized societies. It was characterized by technological innovations, such as the steam engine, factory production, and urbanization, which transformed economies, societies, and daily life.</li></a>
+            <li><a href="#"><span style="font-weight: 600; color:#2c7da0">Modern Era:</span></a>The modern era, often considered to begin with the French Revolution in 1789, encompasses the period from the late 18th century to the present day. It includes major historical events such as the American and French Revolutions, the rise of democracy, nationalism, imperialism, two world wars, the Cold War, globalization, and the Information Age.</li></a>
+            
+        </ul>
+    </div>
+
+</div>
+    </div>
+</body>
+
+</html>
